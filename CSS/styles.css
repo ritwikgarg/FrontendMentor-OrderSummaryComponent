@@ -1,0 +1,293 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Red Hat Display', sans-serif;
+
+}
+
+:root{
+  --background-color: hsl(225, 100%, 94%);
+  --button-color: hsl(245, 75%, 52%);
+  --inner-div-color:hsl(225, 100%, 98%);
+  --text-color:hsl(224, 23%, 55%);
+  --heading-color:hsl(223, 47%, 23%);
+  --active-state-color: hsl(245, 45%, 60%);
+}
+
+
+
+@media only screen and (min-width: 768px)
+{
+  body{
+    background-color: var(--background-color);
+  }
+  .desktop-img{
+    position:absolute;
+    bottom: 30vh;
+    width:100vw;
+    height:100vh;
+    z-index:-1;
+  }
+  .mobile-img{
+    display: none;
+    z-index:-1;
+  }
+
+  .main-img{
+    border-radius: 15px 15px 0 0;
+    max-height: 30%;
+  }
+
+  .outer-div{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
+    width:30vw;
+    height: 80vh;
+    border-radius: 15px;
+    margin-left: 35vw;
+    margin-top: 10vh;
+  }
+
+  .heading{
+    color:var(--heading-color);
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-weight: 900;
+    font-size: 24px;
+  }
+
+  .text-div{
+    width:85%;
+    text-align: center;
+    margin: 0 auto 2rem;
+
+  }
+
+  .text{
+    line-height: 1.6;
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  .inner-div{
+    background-color: var(--inner-div-color);
+    border-radius: 15px;
+    width:85%;
+    margin: 0 auto 1.5rem;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  /* .inner-div>*{
+    padding:12px;
+  } */
+
+  .box-1{
+    flex:1;
+    padding:12px;
+  }
+
+  .box-3{
+    flex:1;
+    padding:12px;
+  }
+
+  .box-2{
+    text-align: left;
+    flex:5;
+    line-height:1.5;
+    padding-left:10px;
+  }
+
+
+
+  .annual-plan{
+    font-weight: 900;
+    color: var(--heading-color);
+  }
+
+  .price{
+    color: var(--text-color);
+
+  }
+
+  .link{
+    font-weight: 700;
+  }
+
+  .link:hover{
+    color:var(--active-state-color);
+  }
+
+  .btn {
+  border-radius: 15px;
+  font-weight: 700;
+  width:85%;
+  margin:0 auto;
+  color: #ffffff;
+  font-size: 16px;
+  background: 	#3829E0;
+  padding:15px 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background:var(--active-state-color);
+  text-decoration: none;
+}
+
+.cancel{
+  text-align: center;
+  padding-top: 20px;
+  color:var(--text-color);
+  font-weight: 900;
+}
+
+.cancel:hover{
+  color:var(--heading-color);
+}
+
+}
+
+@media only screen and (max-width: 768px)
+{
+  body{
+    background-color: hsl(225, 100%, 94%);
+  }
+  .desktop-img{
+    display: none;
+    z-index:-1;
+  }
+  .mobile-img{
+    position:absolute;
+    bottom: 30vh;
+    width:100vw;
+    height:100vh;
+    z-index:-1;
+  }
+
+  .main-img{
+    border-radius: 15px 15px 0 0;
+    max-height: 30%;
+  }
+
+  .outer-div{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: white;
+    width:86vw;
+    height: 84vh;
+    border-radius: 15px;
+    margin-left: 7vw;
+    margin-top: 8vh;
+  }
+
+  .heading{
+    color:var(--heading-color);
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-weight: 900;
+    font-size: 24px;
+  }
+
+  .text-div{
+    width:85%;
+    text-align: center;
+    margin: 0 auto 2rem;
+
+  }
+
+  .text{
+    line-height: 1.6;
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
+  .inner-div{
+    background-color: var(--inner-div-color);
+    border-radius: 15px;
+    width:85%;
+    margin: 0 auto 1.5rem;
+    display:flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .inner-div>*{
+    padding:12px;
+  }
+
+  .box-1{
+    flex:1;
+
+  }
+
+  .box-3{
+    flex:1;
+
+  }
+
+  .box-2{
+    text-align: left;
+    flex:5;
+    line-height:1.5;
+  }
+
+
+
+  .annual-plan{
+    font-weight: 900;
+    color: var(--heading-color);
+  }
+
+  .price{
+    color: var(--text-color);
+
+  }
+
+  .link{
+    font-weight: 700;
+  }
+
+  .link:hover{
+    color:var(--active-state-color);
+  }
+
+  .btn {
+  border-radius: 15px;
+  font-weight: 700;
+  width:85%;
+  margin:0 auto;
+  color: #ffffff;
+  font-size: 16px;
+  background: 	#3829E0;
+  padding:15px 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background:var(--active-state-color);
+  text-decoration: none;
+}
+
+.cancel{
+  text-align: center;
+  padding-top: 20px;
+  color:var(--text-color);
+  font-weight: 900;
+}
+
+.cancel:hover{
+  color:var(--heading-color);
+}
+
+
+}
